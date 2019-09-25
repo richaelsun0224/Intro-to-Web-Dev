@@ -1,0 +1,364 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Lemon Cheesecake Recipe</title>
+    <meta name="author" content="Richael Sun">
+    <meta name="description" content="recipe for lemon cheesecake">
+    <meta name="keywords" content="lemon cheesecake">
+    <style type="text/css" media="screen">
+
+    html{
+      font-size: 30px;
+      background: url(http://www.powerpointhintergrund.com/uploads/food-background-2.jpg) no-repeat center center fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
+  
+    br.clear {
+      clear: both;
+    }
+    
+    .reviewsbox {
+      width: 20vw;
+      height: 25vh;
+      top: 220px;
+      left: 20px;
+      border: 10px solid rgba(51,49,70,1);
+      border-top-width: 60px;
+      background-color: white;
+      position: fixed;
+      font-size: 1.15rem;
+     box-shadow: 3px 3px 10px 3px rgba(10,10,10, 0.5);
+    }
+
+    .interestsbox {
+      width: 20vw;
+      height: 25vh;
+      top: 550px;
+      left: 20px;
+      border: 10px solid rgba(51,49,70,1);
+      border-top-width: 60px;
+      background-color: white;
+      position: fixed;
+      text-align: center;
+      box-shadow: 3px 3px 10px 3px rgba(10,10,10, 0.5);
+    }
+
+    .sidebar{
+      position: absolute;
+      top: 20px;
+    }
+
+    .sidebar ul{
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      background-color: rgba(40,40,40, 0.1);
+    }
+    
+    .sidebar li {
+      height: 37px;
+      line-height: 37px;
+      border-bottom: 3px solid white;
+      width: 333px;
+    }
+
+    .sidebar a {
+      text-decoration: none;
+      color: black;
+      display: block;
+      text-align: center;
+      transition: all 1s;
+    }
+
+    .sidebar a:hover {
+      background-color: rgba(10,10,10, 0.5);
+      color: white;
+    }
+
+    .boxtitle {
+      position: relative;
+      width: 20vw;
+      display: inline-block;
+    }
+
+    .boxtitle p {
+      position: absolute;
+      text-align: center;
+      width: 100%;
+      bottom: 5px;
+      color: white;
+      font-family: 'Orbitron';      
+    }
+
+    .recipebox{
+      background: url(http://sites.bxmc.poly.edu/~richaelsun/WebDev/wp-content/uploads/2018/02/58Fp8-4.png) no-repeat;
+      background-size: 100% 100%;
+      width: 74vw;
+      height: 66vh;
+      left: 400px;
+      top: 220px;
+      margin: 0 auto;
+      position: fixed;
+    }
+
+    .scrollbox{
+      width: 69vw;
+      height: 53vh;
+      left: 450px;
+      top: 295px;
+      position: fixed;
+      overflow: scroll;
+      border-top: 8px dashed black;
+      border-bottom: 8px dashed black;
+    }
+
+    .box{
+      box-sizing: border-box;
+      width: 550px;
+      height: 350px;
+      display: inline-block;
+      font-size: 0.6rem;
+      padding-top: 35px; 
+      float: center;
+      vertical-align: middle;
+      text-align: left;
+      border: 20px solid white;
+    }
+
+    .photoframe{
+      postion: relative;
+      border: 2px dashed black;
+      margin-left: 50px;
+      width: 400px;
+      height: 280px;
+      float: center;
+    }
+
+    .text1{
+      font-family: "Orbitron";
+    }
+
+    .text2{
+      font-family: "Courier New";
+      font-size: 0.7rem;
+    }
+
+    header {
+      height: 150px;
+      background-color: rgba(51,49,70,1);
+      color: white;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 10;
+      font-family: "Orbitron";
+      padding-bottom: 30px;
+    }
+
+    footer {
+      height: 90px;
+      background-color: rgba(51,49,70,1);
+      color: white;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 10;
+    }
+
+    .footercontainer {
+      width: 800px;
+      margin: 0 auto;
+      font-size: 0px;
+    }
+
+    .footerthumbnail {
+      box-sizing: border-box;
+      width: 400px;
+      height: 100px;
+      display: inline-block;
+      font-size: 0.6rem;
+      padding-top: 35px; 
+      float: left；
+      vertical-align: middle;
+    }
+
+    .footerthumbnail-logo {
+      box-sizing: border-box;
+      width: 400px;
+      height: 100px;
+      display: inline-block;
+      padding-left: 220px;
+      padding-top: 10px;
+      float: left;
+    }
+
+    nav {
+      position: fixed;
+      top: 130px;
+      right: 20px;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      background-color: rgba(40,40,40, 0.1);
+    }
+
+    nav li {
+      font-family: 'Orbitron';
+      height: 47px;
+      line-height: 47px;
+      border-bottom: 3px solid white;
+      width: 150px;
+      display: inline-block;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #888;
+      display: block;
+      text-align: center;
+      transition: all 1s;
+    }
+
+    nav a:hover {
+      background-color: rgba(10,10,10, 0.5);
+      color: white;
+    }
+
+    </style>
+  </head>
+
+  <body>
+  
+    <header>
+      <h1><br/>&nbsp &nbspDaily Recipe</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Recipe</a></li>
+        </ul>
+      </nav>
+    </header>
+ 
+    <footer>
+      <div class="footercontainer clearfix">
+        <div class="footerthumbnail-logo">
+             <img src="http://sites.bxmc.poly.edu/~richaelsun/WebDev/wp-content/uploads/2018/02/profile-photo-1-e1518371496462.png"
+                  width="200px"
+                  height="72px">       
+        </div>
+        <div class="footerthumbnail">© Copyright 2018 RichaelSun</div>
+        <br class="clear" />
+      </div>
+    </footer>
+
+    <div class="reviewsbox">
+      <div class="boxtitle">
+        <p>Reviews</p>
+      </div>
+    </div>
+
+    <div class="interestsbox">
+      <div class="boxtitle">
+        <p>Recommendations</p>
+      </div>
+      <div class="sidebar">
+        <div class="text2">
+        <ul>
+          <li><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=2&cad=rja&uact=8&ved=0ahUKEwijmqjzk5_ZAhWHjlkKHRYhBkgQFggqMAE&url=http%3A%2F%2Fwww.geniuskitchen.com%2Frecipe%2Fyuzu-cheesecake-521099&usg=AOvVaw3dlc5wzr__iZT9tyBa3dN3">Yuzu Cheesecake</a></li>
+          <li><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=3&cad=rja&uact=8&ved=0ahUKEwjegYCUlJ_ZAhUInlkKHY7TBCIQFggvMAI&url=https%3A%2F%2Fwww.bettycrocker.com%2Frecipes%2Fclassic-strawberry-shortcakes%2F370099a9-c927-4eae-93ba-ab66a455b996&usg=AOvVaw3pAHjigxIWg1FUSRanh94A">Strawberry Shortcake</a></li>
+          <li><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=3&cad=rja&uact=8&ved=0ahUKEwirhqznk5_ZAhVSj1kKHUUvAyUQFggvMAI&url=https%3A%2F%2Fwww.epicurious.com%2Frecipes%2Ffood%2Fviews%2Foriginal-new-york-cheesecake-51200640&usg=AOvVaw0hYERMkYEODEp8euDJEYgD">New York Cheesecake</a></li>
+          <li><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=3&cad=rja&uact=8&ved=0ahUKEwjf5aKvk5_ZAhXEp1kKHeYdAkAQFggwMAI&url=http%3A%2F%2Fwww.pbs.org%2Ffood%2Frecipes%2Fgreen-tea-crepe-cake%2F&usg=AOvVaw1Bh0uR9sRpZCJknXW7HUKt">Matcha Crepe Cake</a></li>
+          <li><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=2&cad=rja&uact=8&ved=0ahUKEwjBoILzlp_ZAhXCx1kKHeHMC3EQFggpMAE&url=http%3A%2F%2Fallrecipes.com%2Frecipe%2F9295%2Fred-velvet-cake%2F&usg=AOvVaw35V148ByObURnX3TIY2Tpq">Red Velvet Cake</a></li>
+        </ul>    
+      </div>
+      <sidebar>
+    </div>
+
+    <div class="recipebox">
+      <div class="scrollbox">
+        <div class="box">
+          <div class="photoframe">
+            <img src="http://brooklynbrewery.com/blog/wp-content/uploads/2012/02/cheesecake-lemon.jpg"
+                 width="400px"
+                 height="280px"
+                 alt="tasty lemon cheesecake"
+                 title="lemon cheesecake" 
+            />
+          </div>
+        </div>
+        <div class="box">
+          <span class="text1"><h1>Lemon Cheesecake<h1></span>
+          <span class="text2">
+            <h3><u>Description:</u></h3>
+            <p>Prep Time: 30 min; Cook Time: 45 min; Total Time: 1 hr 15 mins</p>
+            <p>A large and luscious cheesecake with just the perfect touch of lemon.</p>
+          </span>
+        </div>
+        <div class="box">
+          <h2><u>Ingredients</u></h2>
+            <h3><em>For the Crust</em></h3>
+            <ul>
+              <li>2 1/4 cups graham cracker crumbs (about 25 single crackers, crushed)</li>
+              <li>1/4 cup sugar</li>
+              <li>6 tablespoons melted butter</li>
+            </ul>
+            <h3><em>For the Filling</em></h3>
+            <ul>
+              <li>3 - 8·ounce packages cream cheese, softened</li>
+              <li>3 eggs</li>
+              <li>1 1/3 cups sugar</li>
+              <li>3 tablespoons lemon juice</li>
+              <li>1 teaspoons vanilla extract</li>
+              <li>1 teaspoon grated lemon rind</li>
+            </ul>
+            <h3><em>For the Sour Cream Topping</em></h3>
+            <ul>
+              <li>1 pint sour cream</li>
+              <li> 3 tablespoons sugar</li>
+              <li>1 tsp vanilla extract</li>
+            </ul>
+            <h3><em>For the Glaze</em></h3>
+            <ul>
+              <li>1/2 cup sugar</li>
+              <li>1 tablespoon plus 1 teaspoon cornstarch</li>
+              <li>1/2 cup water (I substituted 1/2 cup Limoncello for the water but it's optional. I also ended up adding just a touch of lemon paste color. )</li>
+              <li>2 tablespoons lemon juice</li>
+            </ul>
+        </div>
+        <div class="box">
+          <h2><u>Directions</u></h2>
+          <h3><em>Prepare the Crust:</em></h3>
+          <ol>
+            <li>Combine cracker crumbs, sugar and butter. Press into bottom and 1/2" up sides of an 11 to 12 inch springform pan. Bake at 350 degrees for 5 minutes. Cool before adding filling.</li>
+          </ol>
+
+          <h3><em>Make the Cheesecake:</em></h3>
+          <ol>
+            <li>Beat cream cheese with electric mixer at high speed until completely smooth.</li>
+            <li>Add eggs, one at a time, beating until smooth after each addition.</li>
+            <li>Continue to beat, gradually adding 1 1/3 cups sugar, then lemon juice and vanilla.</li>
+            <li>Stir in lemon rind.</li>
+            <li>Pour into cooled crust and bake at 350 degrees for 35 minutes.</li>
+            <li>Blend sour cream, sugar and vanilla extract for topping.</li>
+            <li>Remove cake from oven. Gently spread sour cream over top of cake. Return to oven and bake about 12 minutes.</li>
+            <li>Cool on rack for 30 minutes. Refrigerate until topping is cool but not completely chilled.</li>
+            <li>Make glaze by combining sugar and cornstarch, blending in water and lemon juice until smooth. Bring to a boil, stirring constantly, until thickened. Cook 3 minutes. Chill until cool but not set.</li>
+            <li>Spread top of cheesecake with lemon glaze. Chill several hours or over­night. Can also be frozen.</li>      
+          </ol>
+        </div>        
+      </div>
+    </div>
+
+  </body>
+</html>

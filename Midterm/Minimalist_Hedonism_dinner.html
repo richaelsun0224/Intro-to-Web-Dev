@@ -1,0 +1,264 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Minimalist Hedonism</title>
+    <meta name="author" content="Richael Sun">
+    <meta name="description" content="Minimalist Hedonism">
+    <meta name="keywords" content="Minimalist Hedonism">
+    <style type="text/css" media="screen">
+
+    html {
+        font-size: 25px;      
+        background: url(https://bloximages.newyork1.vip.townnews.com/daily-journal.com/content/tncms/assets/v3/editorial/4/c0/4c06fade-95f1-5212-8e4a-77473a804feb/58e638dd1e2f7.image.jpg)no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+    br.clear {
+        clear: both;
+    }
+
+    .clearfix{
+        overflow: auto;
+    }
+
+    .clearfix::after {
+        content: "";
+        clear: both;
+        display: block;
+    }
+
+    @font-face {
+        font-family: "Orbitron";
+        src: url(font/Orbitron.otf);
+    }
+
+    header {
+        height: 120px;
+        background-color: transparent;
+        color: white;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 10;
+        font-family: "Orbitron";
+    }
+
+    footer {      
+        position: fixed;
+        height: 60px;
+        background-color: black;
+        color: white;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 10;      
+        font-family: 'Orbitron';
+    }
+
+    .footercontainer {
+        width: 100vw;
+        margin: 0 auto;
+    }
+
+    .footerthumbnail {
+        float: right;
+        width: 100vw;
+        height: 50px;
+        padding-top: 18px;
+        display: inline-block;
+        font-size: 0.6rem;
+        text-align: center;
+        vertical-align: middle;     
+    }
+
+    nav {
+        position: fixed;
+        top: 60px;
+        right: 60px;
+    }
+
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        background-color: rgba(40,40,40, 0.1);
+    }
+
+    nav li {
+        font-family: 'Orbitron';
+        height: 47px;
+        line-height: 47px;
+        width: 160px;
+        display: inline-block;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: #888;
+        display: block;
+        text-align: center;
+        transition: all 0.2s;
+    }
+
+    nav a:hover {
+        color: white;
+        border-bottom: 3px solid white;
+    }
+
+    .bodycontainer{
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        left: 0;
+        top: 0;
+        background-color: rgba(0, 0, 0, 0.8);
+    }    
+
+    .headline{
+        position: fixed;
+        width: 100vw;
+        height: 100px;
+        top: 150px;
+        text-align: center;
+        font-size: 1.4rem;
+        font-family: "Zapfino";
+        color: white;
+    }
+
+    .contentbox{
+        position: relative;
+        width: 98vw;
+        height: 1000px;
+        top: 270px;
+        left: 50%;
+        margin-left: -49vw;
+        text-align: center;
+        line-height: 20px;
+    }
+
+    .box{
+        width: 90vw;
+        height: 350px;
+    }
+
+    #polaroid{
+        width: 300px;
+        height: 260px;
+        border: white solid 2px;
+        border-radius: 10px;
+        margin: 20px;
+        padding-top: 50px;
+        display: inline-grid;
+    }
+
+    #polaroid img {
+        position: relative;
+        width: 240px;
+        height: 240px;
+        left: 30px;
+        margin-top: -15px;
+        border-radius: 10px;
+        -webkit-box-shadow: 3px 3px 10px 3px rgba(10,10,10, 0.5);
+        -moz-box-shadow: 3px 3px 10px 3px rgba(10,10,10, 0.5);
+        box-shadow: 3px 3px 10px 3px rgba(10,10,10, 0.5);
+    }
+
+    #polaroid p{
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    #polaroid .text {
+        width: 240px;
+        height: 240px;
+        top: -240px;
+        left: 30px;
+        border-radius: 10px;
+        font-family: "Orbitron";
+        color: white;
+        font-size: 0.8rem;
+        line-height: 40px;
+        text-align: center;
+        visibility: hidden;
+    }
+    
+    #polaroid:hover .text {
+        text-decoration: none;
+        position: relative;
+        background-color: rgba(0,0,0,.6);
+        visibility: visible;
+    }
+
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h2><br/>&nbsp &nbsp &nbsp Minimalist Hedonism</h2>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Minimalist_Hedonism_About.html">About Us</a></li>
+          <li><a href="Minimalist_Hedonism_Recipes.html">Recipes</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="bodycontainer">
+        <div class="headline">Dinner</div>
+        <div class="contentbox clearfix">
+            <div id="polaroid">
+                <img src="img/Chicken Pesto.jpg" class="hover" />
+                <a href="http://www.geniuskitchen.com/recipe/chicken-pesto-21882">
+                    <p class="text">Chicken Pesto</p>
+                </a>
+            </div>
+            <div id="polaroid">
+                <img src="img/Scallops With Creamy Pesto.jpg" class="hover" />
+                <a href="http://www.geniuskitchen.com/recipe/scallops-with-creamy-pesto-372209">
+                    <p class="text">Scallops With Creamy Pesto</p>
+                </a>
+            </div>
+            <div id="polaroid">
+                <img src="img/Tater Tots Casserole.jpg" class="hover" />
+                <a href="http://www.geniuskitchen.com/recipe/tater-tots-casserole-27117">
+                    <p class="text">Tater Tots Casserole</p>
+                </a>
+            </div>
+            <div id="polaroid">
+                <img src="img/Slow And Easy Beef Stew.jpg" class="hover" />
+                <a href="http://www.geniuskitchen.com/recipe/slow-and-easy-beef-stew-322262">
+                    <p class="text">Slow And Easy Beef Stew</p>
+                </a>
+            </div>
+            <div id="polaroid">
+                <img src="img/Easy Loaded Baked Potatoes(4 Ways).jpg" class="hover" />
+                <a href="http://www.geniuskitchen.com/recipe/easy-loaded-baked-potatoes-4-ways-37689">
+                    <p class="text">Easy Loaded Baked Potatoes(4 Ways)</p>
+                </a>
+            </div>
+            <div id="polaroid">
+                <img src="img/Hamburger Skillet Supper.jpg" class="hover" />
+                <a href="http://www.geniuskitchen.com/recipe/hamburger-skillet-supper-25551">
+                    <p class="text">Hamburger Skillet Supper</p>
+                </a>
+            </div>
+            <div class="box"></div>
+            <br class="clear">
+    </div>
+ 
+    <footer>
+      <div class="footercontainer clearfix">      
+        <div class="footerthumbnail">Copyright © 2018 Minimalist Hedonism All Reserved</div>
+        <br class="clear" />
+      </div>
+    </footer>
+
+  </body>
+</html>

@@ -1,0 +1,335 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Minimalist Hedonism</title>
+    <meta name="author" content="Richael Sun">
+    <meta name="description" content="Minimalist Hedonism">
+    <meta name="keywords" content="Minimalist Hedonism">
+    <style type="text/css" media="screen">
+
+    html {
+        font-size: 25px;      
+        background: url(https://nosidebar.com/images/benefits-of-minimalism.jpg)no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+    br.clear {
+        clear: both;
+    }
+
+    .clearfix{
+        overflow: auto;
+    }
+
+    .clearfix::after {
+        content: "";
+        clear: both;
+        display: block;
+    }
+
+    @font-face {
+        font-family: "Orbitron";
+        src: url(font/Orbitron.otf);
+    }
+
+    .dropbtn {
+        background-color: rgba(0,0,0,0);
+        color: #888;
+        width: 160px;
+        font-size: 1rem;
+        font-family: "Orbitron";
+        border: none;
+        cursor: pointer;
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        font-size: 0.8rem;
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 16px;
+        padding-bottom: 0px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #000000;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    header {
+    	height: 120px;
+        background-color: transparent;
+        color: white;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 10;
+        font-family: "Orbitron";
+    }
+
+    footer {      
+        position: fixed;
+        height: 60px;
+        background-color: black;
+        color: white;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 10;      
+        font-family: 'Orbitron';
+    }
+
+    .footercontainer {
+        width: 100vw;
+        margin: 0 auto;
+    }
+
+    .footerthumbnail {
+        float: right;
+        width: 100vw;
+        height: 50px;
+        padding-top: 18px;
+        display: inline-block;
+        font-size: 0.6rem;
+        text-align: center;
+        vertical-align: middle;     
+    }
+
+    nav {
+        position: fixed;
+        top: 60px;
+        right: 60px;
+    }
+
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        background-color: rgba(40,40,40, 0.1);
+    }
+
+    nav li {
+        font-family: 'Orbitron';
+        height: 47px;
+        line-height: 47px;
+        width: 160px;
+        display: inline-block;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: #888;
+        display: block;
+        text-align: center;
+        transition: all 0.2s;
+    }
+
+    nav a:hover {
+        color: white;
+        border-bottom: 3px solid white;
+    }
+
+    .bodycontainer{
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        left: 0;
+        top: 0;
+        background-color: rgba(0, 0, 0, 0.8);
+    }    
+
+    .body{
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        text-align: center;
+        margin-top: 220px;
+    }
+
+    .subbox {
+        width: 320px;
+        height: 480px;
+        border: white solid 2px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        margin: 20px;
+        padding-top: 50px;
+        display: inline-block;
+    }
+
+    .subbox-menu{
+        position: absolute;
+        width: 220px;
+        height: 40px;
+        margin-top: 40px; 
+        margin-left: 50px;
+        text-align: center;
+        line-height: 40px;
+        border: white solid 2px;
+        border-radius: 10px;
+        font-size: 0.9rem;
+        font-family: "Orbitron";
+        color: white;
+    }
+
+    .subbox-menu a{
+        text-decoration: none;
+        color: white;
+        border: rgba(0,0,0,.5) solid .1px;
+        border-radius: 10px;
+        display: block;
+        transition: all 0.2s;
+    }
+
+    .subbox-menu a:hover{
+        background-color: rgba(0,0,0,.5);
+        border: rgba(0,0,0,.5) solid .1px;
+        border-radius: 10px;
+    }
+
+    .subbox-link{
+        position: absolute;
+        width: 165px;
+        height: 71px;
+        margin-top: 93px; 
+        margin-left: -71.5px;
+        line-height: 77px;
+        font-size: 0.9rem;
+        font-family: "Orbitron";
+        color: white;
+        transform: rotate(-90deg);
+    }
+
+    .subbox-link a{
+        text-decoration: none;
+        color: white;
+        border: rgba(0,0,0,.5) solid .1px;
+        display: block;
+        transition: all 0.2s;
+    }
+
+    .subbox-link a:hover{
+        background-color: rgba(0,0,0,.5);
+        border: rgba(0,0,0,.5) solid .1px;
+    }
+
+    .subbox-link ul{
+        list-style-type: none;
+    }
+
+    .subbox-link li{
+        width: 160px;
+        height: 77px;
+        display: inline-block;
+        border: white dashed 2px;
+    }
+
+    .subbox-title{
+        margin-top: 20px;
+        text-align: center;
+        color: white;
+        font-size: 1rem;
+        font-family: "Zapfino";
+    }
+
+
+
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h2><br/>&nbsp &nbsp &nbsp Minimalist Hedonism</h2>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Minimalist_Hedonism_About.html">About Us</a></li>
+          <li>
+            <div class="dropdown">
+                <a href="Minimalist_Hedonism_Recipes.html" class="menu"><button class="dropbtn">Recipes</button></a>
+                <div class="dropdown-content">
+                    <p><a href="Minimalist_Hedonism_breakfast.html">breakfast</a></p>
+                    <p><a href="Minimalist_Hedonism_brunch.html">brunch</a></p>
+                    <p><a href="Minimalist_Hedonism_lunch.html">lunch</a></p>
+                    <p><a href="Minimalist_Hedonism_dinner.html">dinner</a></p>
+                    <p><a href="Minimalist_Hedonism_soupdrink.html">soup&nbsp+&nbspdrinks</a></p>
+                    <p><a href="Minimalist_Hedonism_dessert.html">dessert</a></p>
+                </div>   
+                </div>             
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="bodycontainer">
+        <div class="body clearfix">
+            <div class="subbox">
+                <img src="https://www.notjessfashion.com/wp-content/uploads/2017/05/Zizi-Limona-NotJessFashion-900x900.jpg"
+                height="200px"
+                />
+                <div class="subbox-title">Fast & Tasty</div>
+                <div class="subbox-link">
+                    <ul>
+                        <li><a href="Minimalist_Hedonism_breakfast.html">breakfast</a></li>
+                        <li><a href="Minimalist_Hedonism_brunch.html">brunch</a></li>
+                        <li><a href="Minimalist_Hedonism_lunch.html">lunch</a></li>
+                        <li><a href="Minimalist_Hedonism_dinner.html">dinner</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="subbox">
+                <img src="http://cdn2.simplysated.com/wp-content/uploads/2017/11/square-creamy-chicken-soup-1-of-1.jpg"
+                height="200px"
+                />
+                <div class="subbox-title">Soup & Drinks</div>
+                <div class="subbox-menu">
+                    <a href="Minimalist_Hedonism_soupdrink.html">see full menu</a>
+                </div>
+            </div>
+            <div class="subbox">
+                <img src="https://media1.popsugar-assets.com/files/thumbor/2WNkVjLF2z6TSSFpBXSn_7P-PS4/fit-in/2048xorig/filters:format_auto-!!-:strip_icc-!!-/2016/11/17/076/n/28443503/197091e4582cfee950b910.04689349_edit_img_image_42722559_1479341622/i/Healthy-Instagram-Inspo-Christmas-Lunch.jpg"
+                height="200px"
+                />
+                <div class="subbox-title">Dessert</div>
+                <div class="subbox-menu">
+                    <a href="Minimalist_Hedonism_dessert.html">see full menu</a>
+                </div>
+            </div>
+            <br class="clear">
+        </div>
+    </div>
+ 
+    <footer>
+      <div class="footercontainer clearfix">      
+        <div class="footerthumbnail">Copyright © 2018 Minimalist Hedonism All Reserved</div>
+        <br class="clear" />
+      </div>
+    </footer>
+
+  </body>
+</html>
+

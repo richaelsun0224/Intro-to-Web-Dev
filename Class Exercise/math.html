@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+  	<title>Math.Random and some Roundings</title>
+  </head>
+
+  <body>
+
+   	<script type="text/javascript">
+
+   		var z = 2.25;
+      var y = 2.65;
+
+      var zf = Math.floor(z);
+      console.log(zf);
+
+      var zc = Math.ceil(z);
+      console.log(zc);
+
+      var zr = Math.round(z);
+      var yr = Math.round(y);
+      console.log(zr,yr);
+
+      var r = Math.random();
+      console.log(r);
+
+      //------->coin flip
+      var yn = Math.round(Math.random());
+      console.log(yn);
+
+      if (yn === 0) {
+        alert('heads!');
+      } else {
+        alert('tails!')
+      }
+
+      //make a function with a number parameter so we can change the range every time for a more reusable function
+      function randomNumber(n) {
+        var rn = Math.round(n * Math.random());
+        console.log(rn);
+      }
+
+      randomNumber(76);
+
+      //random no. function with range provided using min and max parameter
+      function.randomNumRange(min,max) {
+        var rn = Math.round(Math.random() * (max-min) + min);
+        return rn;
+      }
+
+   	</script>
+
+  </body>
+ </html>

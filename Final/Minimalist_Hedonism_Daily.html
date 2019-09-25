@@ -1,0 +1,384 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Minimalist Hedonism</title>
+    <meta name="author" content="Richael Sun">
+    <meta name="description" content="Minimalist Hedonism">
+    <meta name="keywords" content="Minimalist Hedonism">
+    <style type="text/css" media="screen">
+
+    html {
+        font-size: 25px;      
+        background: url(https://media1.popsugar-assets.com/files/thumbor/S6wojutwEffbqUVmOlD0ZKCpzQo/fit-in/2048xorig/filters:format_auto-!!-:strip_icc-!!-/2017/03/29/958/n/1922441/e19c041775b10ce0_bench-accounting-49909.jpg)no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+    br.clear {
+        clear: both;
+    }
+
+    @font-face {
+        font-family: "Orbitron";
+        src: url(font/Orbitron.otf);
+    }
+
+    body {
+      margin-top: 40px;
+      background-color: black;
+      color: white;
+    }
+
+    .dropbtn {
+        background-color: rgba(0,0,0,0);
+        color: #888;
+        width: 160px;
+        font-size: 1rem;
+        font-family: "Orbitron";
+        border: none;
+        cursor: pointer;
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        font-size: 0.8rem;
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 16px;
+        padding-bottom: 0px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #000000;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+
+    #main {
+      margin: 0 auto;
+      width: 80vw;
+    }
+
+    .sidebar{
+        font-family: "Source Sans Pro";
+    }
+
+    .sidebar section {
+      padding: 20px 0 80px 0;
+      height: 100vh;
+      background-color: rgba(0,0,0,0.8);
+    }
+
+    .sidebar h2 {
+      font-size: 48px;
+      border-bottom: 2px solid #ccc;
+      padding-top: 130px;
+      padding-bottom: 20px;
+    }
+
+    .sidebar ul {
+      position: fixed;
+      top: 50%;
+      right: 0;
+      list-style: none;
+    }
+
+    .sidebar li {
+      width: 80px;
+      padding: 10px;
+      margin-bottom: 1px;
+      background-color: #333;
+      color: #ccc;
+      border-left: 10px solid #333;
+      cursor: pointer;
+    }
+
+    .sidebar .active {
+      color: #FFF;
+      border-left: 20px solid #FFF;
+      line-height: 30px;
+    }
+
+    header {
+    	height: 160px;
+        background-color: rgb(51,51,51);
+        color: white;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 10;
+        font-family: "Orbitron";
+    }
+
+    footer {      
+        position: fixed;
+        height: 60px;
+        background-color: black;
+        color: white;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 10;      
+        font-family: 'Orbitron';
+    }
+
+    .footercontainer {
+        width: 100vw;
+        margin: 0 auto;
+    }
+
+    .footerthumbnail {
+        float: right;
+        width: 100vw;
+        height: 50px;
+        padding-top: 18px;
+        display: inline-block;
+        font-size: 0.6rem;
+        text-align: center;
+        vertical-align: middle;     
+    }
+
+    nav {
+        position: fixed;
+        top: 60px;
+        right: 60px;
+    }
+
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        background-color: rgba(40,40,40, 0.1);
+    }
+
+    nav li {
+        font-family: 'Orbitron';
+        height: 47px;
+        line-height: 47px;
+        width: 160px;
+        display: inline-block;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: #888;
+        display: block;
+        text-align: center;
+        transition: all 0.2s;
+    }
+
+    nav a:hover {
+        color: white;
+        border-bottom: 3px solid white;
+    }
+
+    #bodythumbnail{
+        position: relative;
+        width: 37vw;
+        margin: 0 auto;
+        padding: 0 auto;
+        padding-top: 20px;
+        float: left;
+    }
+
+    #bodythumbnail img{
+        position: relative;
+        width: 60vh;
+        left: 40%;
+        margin-left: -23vh;
+        height: auto;
+    }
+
+    #bodythumbnail ol{
+        color: white;
+        font-family: "Source Sans Pro";
+    }
+
+    #bodythumbnail .description{
+        position: relative;
+        left: 30%;
+        font-size: 0.8rem;
+        font-family: "Source Sans Pro";
+        color: white;
+    }
+
+
+    </style>
+  </head>
+
+  <body>
+  	<header>
+      <h2><br/>&nbsp &nbsp &nbsp Minimalist Hedonism</h2>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Minimalist_Hedonism_About.html">About Us</a></li>
+          <li>
+            <div class="dropdown">
+                <a href="Minimalist_Hedonism_Recipes.html" class="menu"><button class="dropbtn">Recipes</button></a>
+                <div class="dropdown-content">
+                    <p><a href="Minimalist_Hedonism_breakfast.html">breakfast</a></p>
+                    <p><a href="Minimalist_Hedonism_brunch.html">brunch</a></p>
+                    <p><a href="Minimalist_Hedonism_lunch.html">lunch</a></p>
+                    <p><a href="Minimalist_Hedonism_dinner.html">dinner</a></p>
+                    <p><a href="Minimalist_Hedonism_soupdrink.html">soup&nbsp+&nbspdrinks</a></p>
+                    <p><a href="Minimalist_Hedonism_dessert.html">dessert</a></p>
+                </div>   
+                </div>             
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+
+    <div class="sidebar">
+        <ul>
+          <li id="floor3Btn">Entrée</li>
+          <li id="floor2Btn">Dessert</li>
+          <li id="floor1Btn">Drink</li>
+        </ul>
+
+        <div id="main">
+
+          <section id="floor3Panel">
+            <h2>Chicken Pesto</h2>
+            <div id="bodythumbnail">   
+                <img src="img/DailyRecipe1.png"/>
+            </div>
+            <div id="bodythumbnail">  
+                <br/><br/>
+                <div class="description"><big><b>READY IN:</b> 1hr 10mins &nbsp|&nbsp<b> SERVES:</b> 8</big></div><br/>
+                <div class="description"><big><b><u>DIRECTIONS:</u></b></big></div>
+                <div class="description">1. Prepare pesto sauce according to package direction.</div>
+                <div class="description">2. Heat oven to 350 degrees.</div>
+                <div class="description">3. Spray rectangular dish (9 by 12 inch) with no-stick spray.</div>
+                <div class="description">4. Moisten chicken with water, shake off excess, <br/>and coat complete with bread crumbs.</div>
+                <div class="description">5. Place chicken in baking dish.</div>
+                <div class="description">6. Spread pesto sauce evenly over chicken breasts.</div>
+                <div class="description">7. Cover each breast with ½ slice of provolone cheese.</div>
+                <div class="description">8. Spread mushrooms over cheese.</div>
+                <div class="description">9. Bake in oven for 45 - 50 minutes.</div>
+                <div class="description">10. Serve with pasta.</div>
+            </div>
+          </section>
+
+          <section id="floor2Panel">
+            <h2>Lemon Cheesecake</h2>
+            <div id="bodythumbnail">   
+                <img src="img/DailyRecipe2.png"/>
+            </div>
+            <div id="bodythumbnail">  
+                <br/><br/><br/>
+                <div class="description"><big><b>READY IN:</b> 10mins &nbsp|&nbsp<b> SERVES:</b> 8</big></div><br/>
+                <div class="description"><big><b><u>DIRECTIONS:</u></b></big></div>
+                <div class="description">1. Beat cream cheese until fluffy.</div>
+                <div class="description">2. Add sweetened condensed milk and beat again until smooth.</div>
+                <div class="description">3. Add lemon juice, water, lemon zest, and dry pudding mix. <br/>Beat until combined.</div>
+                <div class="description">4. Fold in ½ of whipped topping.</div>
+                <div class="description">5. Pour cheesecake filling into prepared pie crust.</div>
+                <div class="description">6. Refrigerate for at least 2 hours.</div>
+                <div class="description">7. Serve with whipped topping.</div>
+                <div class="description">8. Garnish with lemon slices and chocolate curls if desired.</div>
+            </div>
+          </section>
+
+          <section id="floor1Panel">
+            <h2>Chardonny Wine</h2>
+            <div id="bodythumbnail">   
+                <img src="img/DailyRecipe3.png"/>
+            </div>
+            <div id="bodythumbnail">  
+                <br/><br/><br/><br/><br/>
+                <div class="description"><big><b><u>Chardonnay Wine Taste Profile:</u></b></big></div><br/>
+                <div class="description"><b>- FRUIT FLAVOR</b> Lemon, Apple, Pineapple, Passionfruit, Peach</div>
+                <div class="description"><b>- OTHER</b> Apple Blossom, Lemon Zest, Citrus Peel, Celery leaf etc.</div>
+                <div class="description"><b>- OAK FLAVOR</b> Vanilla, Baked Tart, Butter, Caramelized Sugar etc.</div>
+                <div class="description"><b>- CHARDONNAY SERVING TEMPERATURE</b> <br/> Unoaked: 48 ºF (9 ºC) &nbsp Oaked: 54 ºF (12 ºC)</div>
+                <div class="description"><b>- ACIDITY</b> <br/>Medium Low (oaked warm) – Medium High (unoaked cool)</div>
+            </div>
+          </section>
+
+        </div>
+      </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/plugins/ScrollToPlugin.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+      crossorigin="anonymous"></script>
+    <script type="text/javascript" class="sidebar">
+      $(document).ready(function(){
+        TweenLite.from($('body'), 0.5, {autoAlpha: 0});
+
+        TweenLite.from($('ul'), 0.5, {right: -500, delay: 0.5});
+
+        var $floor1Btn = $('#floor1Btn'),
+        $floor2Btn = $('#floor2Btn'),
+        $floor3Btn = $('#floor3Btn'),
+        $navButtons = $('li');
+
+        $navButtons.mouseenter(function(){
+          TweenLite.to(this, 1, {className: '+=active'});
+        });
+        
+        $navButtons.mouseleave(function(){
+          TweenLite.to(this, 0.5, {className: '-=active'});
+        });
+
+        console.log($('#floor1Panel').offset().top);
+
+ 
+        $floor1Btn.attr('data-scrollpos', $('#floor1Panel').offset().top);
+        $floor2Btn.attr('data-scrollpos', $('#floor2Panel').offset().top);
+        $floor3Btn.attr('data-scrollpos', $('#floor3Panel').offset().top);
+
+        $navButtons.click(function(){
+          var myScrollPos = $(this).attr('data-scrollpos');
+          TweenLite.to(window,2,{
+            scrollTo: myScrollPos,
+            ease: Back.easeOut
+          });
+        });
+
+        var initialFloor = $('#floor1Btn').attr('data-scrollpos');
+
+        TweenLite.to(window, 2, {scrollTo: initialFloor});
+
+      });
+
+    </script>
+
+
+    <footer>
+      <div class="footercontainer clearfix">      
+        <div class="footerthumbnail">Copyright © 2018 Minimalist Hedonism All Reserved</div>
+        <br class="clear" />
+      </div>
+    </footer>
+
+  </body>
+</html>

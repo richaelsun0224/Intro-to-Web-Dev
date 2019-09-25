@@ -1,0 +1,289 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Minimalist Hedonism</title>
+    <meta name="author" content="Richael Sun">
+    <meta name="description" content="Minimalist Hedonism">
+    <meta name="keywords" content="Minimalist Hedonism">
+    <style type="text/css" media="screen">
+
+    html {
+        font-size: 25px;      
+        background: url(https://media1.popsugar-assets.com/files/thumbor/S6wojutwEffbqUVmOlD0ZKCpzQo/fit-in/2048xorig/filters:format_auto-!!-:strip_icc-!!-/2017/03/29/958/n/1922441/e19c041775b10ce0_bench-accounting-49909.jpg)no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+    br.clear {
+        clear: both;
+    }
+
+    @font-face {
+        font-family: "Orbitron";
+        src: url(font/Orbitron.otf);
+    }
+
+    header {
+    	height: 120px;
+        background-color: transparent;
+        color: white;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 10;
+        font-family: "Orbitron";
+    }
+
+    footer {      
+        position: fixed;
+        height: 60px;
+        background-color: black;
+        color: white;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 10;      
+        font-family: 'Orbitron';
+    }
+
+    .footercontainer {
+        width: 100vw;
+        margin: 0 auto;
+    }
+
+    .footerthumbnail {
+        float: right;
+        width: 100vw;
+        height: 50px;
+        padding-top: 18px;
+        display: inline-block;
+        font-size: 0.6rem;
+        text-align: center;
+        vertical-align: middle;     
+    }
+
+    nav {
+        position: fixed;
+        top: 60px;
+        right: 60px;
+    }
+
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        background-color: rgba(40,40,40, 0.1);
+    }
+
+    nav li {
+        font-family: 'Orbitron';
+        height: 47px;
+        line-height: 47px;
+        width: 160px;
+        display: inline-block;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: #888;
+        display: block;
+        text-align: center;
+        transition: all 0.2s;
+    }
+
+    nav a:hover {
+        color: white;
+        border-bottom: 3px solid white;
+    }
+
+    .bodycontainer{
+    	position: fixed;
+    	width: 100vw;
+    	height: 100vh;
+    	left: 0;
+    	top: 0;
+    	background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    .scrollbox{
+        position: fixed;
+        width: 100vw;
+        height: 80vh;
+        top: 120px;
+        overflow: scroll;
+    }
+
+    .box{
+        position: relative;
+        width: 74vw;
+        height: 80vh;
+        top: 120px;
+        left: 50%;
+        margin-left: -37vw;
+    }
+
+    #bodythumbnail{
+        position: relative;
+        width: 37vw;
+        height: 20vw;
+        border-bottom: white solid 2px;
+        margin: 0 auto;
+        padding: 0 auto;
+        padding-top: 60px;
+        float: left;
+    }
+
+    #bodythumbnail img{
+        position: relative;
+        width: 46vh;
+        left: 50%;
+        margin-left: -23vh;
+        height: auto;
+        border: solid 0.1px;
+        border-radius: 10px;
+        -webkit-box-shadow: 3px 3px 10px 3px rgba(10,10,10, 0.5);
+        -moz-box-shadow: 3px 3px 10px 3px rgba(10,10,10, 0.5);
+        box-shadow: 3px 3px 10px 3px rgba(10,10,10, 0.5);
+    }
+
+    #bodythumbnail .dashedbox{
+        position: relative;
+        display: inline-block;
+        width: 300px;
+        height: 40px;
+        color: white;
+        left: 50%;
+        border-bottom: white dashed 1px;
+        font-family: "Source Sans Pro";
+        font-size: 0.8rem;
+        text-align: center;
+        line-height: 50px;
+        margin-top: -50px;
+        margin-left: -200px;
+    }
+
+    #bodythumbnail .subheadline{
+        position: relative;
+        width: max-content;
+        height: 50px;
+        line-height: 68px;
+        left: 50%;
+        margin-left: -200px;
+        margin-top: -10px;
+        color: white;
+        font-family: "Source Sans Pro";
+        border-bottom: white solid 2px;
+    }
+
+    #bodythumbnail .ingredient{
+        position: relative;
+        width: max-content;
+        height: auto;
+        color: white;
+        font-family: "Source Sans Pro";
+        font-size: 0.8rem;
+        border-bottom: white dashed 1px;
+        line-height: 35px;
+        left: 50%;
+        margin-left: -200px;
+        margin-top: -2px;
+    }
+
+    </style>
+  </head>
+
+  <body>
+  	<header>
+      <h2><br/>&nbsp &nbsp &nbsp Minimalist Hedonism</h2>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Minimalist_Hedonism_About.html">About Us</a></li>
+          <li><a href="Minimalist_Hedonism_Recipes.html">Recipes</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="bodycontainer">
+        <div class="scrollbox"><div class="box">
+            <div id="bodythumbnail">   
+                <img src="img/DailyRecipe1.jpg"/>
+            </div>
+            <div id="bodythumbnail"> 
+                <div class="dashedbox"><b>READY IN:</b> 1hr 10mins &nbsp|&nbsp<b> SERVES:</b> 8</div>
+                <div class="subheadline"><b>INGREDIENTS</b></div>
+                <div class="ingredient"><b>1</b> &nbsp package pesto sauce mix</div>
+                <div class="ingredient"><b>8</b> &nbsp boneless skinless chicken breasts</div>
+                <div class="ingredient">&nbsp&nbsp&nbsp&nbsp&nbsp breadcrumbs</div>
+                <div class="ingredient"><b>4</b> &nbsp slices provolone cheese, cut in half</div>
+                <div class="ingredient"><b>1</b> &nbsp (4 ounce) cansliced mushrooms</div>
+            </div>
+            <div id="bodythumbnail">   
+                <div class="subheadline"><b>DIRECTIONS</b></div>
+                <div class="ingredient">Prepare pesto sauce according to package direction.</div>
+                <div class="ingredient">Heat oven to 350 degrees.</div>
+                <div class="ingredient">Spray rectangular dish (9 by 12 inch) with no-stick spray.</div>
+                <div class="ingredient">Moisten chicken with water, shake off excess, <br/>and coat complete with bread crumbs.</div>
+                <div class="ingredient">Place chicken in baking dish.</div>
+            </div>
+            <div id="bodythumbnail">   
+                <div class="ingredient">Spread pesto sauce evenly over chicken breasts.</div>
+                <div class="ingredient">Cover each breast with ½ slice of provolone cheese.</div>
+                <div class="ingredient">Spread mushrooms over cheese.</div>
+                <div class="ingredient">Bake in oven for 45- 50 minutes.</div>
+                <div class="ingredient">Serve with pasta.</div>
+            </div>
+            <div id="bodythumbnail">   
+                <img src="img/DailyRecipe2.jpg"/>
+            </div>
+            <div id="bodythumbnail"> 
+                <div class="dashedbox"><b>READY IN:</b> 10mins &nbsp|&nbsp<b> SERVES:</b> 8</div>
+                <div class="subheadline"><b>INGREDIENTS</b></div>
+                <div class="ingredient"><b>6oz</b> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp chocolate pie crust</div>
+                <div class="ingredient"><b>1-8oz.</b> &nbsp pkg cream cheese, room temperature</div>
+                <div class="ingredient"><b>14oz.</b> &nbsp&nbsp&nbsp can sweetened condensed milk</div>
+                <div class="ingredient"><b>1/4c.</b> &nbsp&nbsp&nbsp&nbsp lemon juice, fresh squeezed is best</div>
+                <div class="ingredient"><b>4</b> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp serving size package instant lemon pudding mix</div>
+                <div class="ingredient"><b>8 oz.</b> &nbsp&nbsp&nbsp&nbsp&nbsp tub whipped topping</div>
+            </div>
+            <div id="bodythumbnail">   
+                <div class="subheadline"><b>DIRECTIONS</b></div>
+                <div class="ingredient">Beat cream cheese until fluffy.</div>
+                <div class="ingredient">Add sweetened condensed milk and beat again until smooth.</div>
+                <div class="ingredient">Add lemon juice, water, lemon zest, and dry pudding mix. <br/>Beat until combined.</div>
+                <div class="ingredient">Fold in ½ of whipped topping.</div>
+                <div class="ingredient">Pour cheesecake filling into prepared pie crust.</div>
+            </div>
+            <div id="bodythumbnail">   
+                <div class="ingredient">Refrigerate for at least 2 hours.</div>
+                <div class="ingredient">Serve with whipped topping.</div>
+                <div class="ingredient">Garnish with lemon slices and chocolate curls if desired.</div>
+            </div>
+            <div id="bodythumbnail">   
+                <img src="img/DailyRecipe3.jpg"/>
+            </div>
+            <div id="bodythumbnail">   
+                <div class="subheadline"><b>Chardonnay Wine Taste Profile</b></div>
+                <div class="ingredient"><b>FRUIT FLAVOR</b> Lemon, Apple, Pineapple, Passionfruit, Peach</div>
+                <div class="ingredient"><b>OTHER</b> Apple Blossom, Lemon Zest, Citrus Peel, Celery leaf etc.</div>
+                <div class="ingredient"><b>OAK FLAVOR</b> Vanilla, Baked Tart, Butter, Caramelized Sugar etc.</div>
+                <div class="ingredient"><b>CHARDONNAY SERVING TEMPERATURE</b> <br/> Unoaked: 48 ºF (9 ºC) &nbsp Oaked: 54 ºF (12 ºC)</div>
+                <div class="ingredient"><b>ACIDITY</b> <br/>Medium Low (oaked warm) – Medium High (unoaked cool)</div>
+            </div>
+        </div>
+    </div></div>
+ 
+    <footer>
+      <div class="footercontainer clearfix">      
+        <div class="footerthumbnail">Copyright © 2018 Minimalist Hedonism All Reserved</div>
+        <br class="clear" />
+      </div>
+    </footer>
+
+  </body>
+</html>
